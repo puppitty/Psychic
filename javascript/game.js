@@ -75,5 +75,5 @@ document.onkeyup = function (event) {
   lettersGuessedHTML.textContent = lettersGuessed.join(', ');
 };
 
-// Listens forhte reset button and changes all the values back to the beginnning values.
+// Listens for the reset button and changes all the values back to the beginnning values.
 resetButton.addEventListener('click', game.reWriteStats);
