@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +10,56 @@
 </head>
 
 <body>
- <div class"jumbotron-fluid bg-dark text-light h-100">
-   <div class="container">
-     <div class="row align items-center justify-content-center"style="height:100vh">
-       <div class="col-12 col-sm-10 col-md-8 text center">
-         <h1>The Psychic Game</h1>
-         <div id="game">
-         <h3>Guess what letter I'm thinking of...</h3>
+  <div class "jumbotron-fluid bg-dark text-light h-100">
+    <div class="container">
+      <div class="row align items-center justify-content-center" style="height:100vh">
+        <div class="col-12 col-sm-10 col-md-8 text center">
+          <h1>The Psychic Game</h1>
+          <div id="game">
+          </div>
+
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3>Guess what letter I'm thinking of..</h3>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Your score... </h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">
+                    Wins:
+                    <span id="number-wins"></span>
+                  </li>
+                  <li class="list-group-item">
+                    Losses:
+                    <span id="number-losses"></span>
+                  </li>
+                  <li class="list-group-item">
+                    Guesses Left:
+                    <span id="guesses-left"></span>
+                  </li>
+                  <li class="list-group-item">
+                    Computer Choices:
+                    <span id="computer-guess"></span>
+                  </li>                 <li class="list-group-item">
+                    Your guesses:
+                    <span id="letters-guessed"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <button class="btn btn-block btn-danger py-2" id="reset-button">Reset Stats</button>
+          </div>
         </div>
-
-         <button class="btn btn-block btn-danger py-2" id="reset-button">Reset Stats</button>
-       </div>
-     </div>
-
-   </div>
- </div>
-  <div id="psychic"></div> 
+      </div>
+    </div>
+  </div>
+  <!-- <div id="psychic"></div>  -->
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="./javascript/game.js"></script>
 </body>
+
 </html>
