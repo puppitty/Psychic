@@ -71,7 +71,7 @@ document.onkeyup = function (event) {
   numberWinsHTML.textContent = wins;
   numberLossesHTML.textContent = losses;
   guessesLeftHTML.textContent = guessesLeft;
-  computerGuessHTML = computerGuess;
+  computerGuessHTML.textContent = computerGuess;
   lettersGuessedHTML.textContent = lettersGuessed.join(', ');
 };
 
